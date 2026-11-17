@@ -78,7 +78,7 @@ def parcours_DFS(cartons, cible):
             pile.empiler(enfant)
             taille_max_pile = max(taille_max_pile, pile.longueur())
 
-    return meilleure_expression, nb_noeuds
+    return meilleure_expression, nb_noeuds, taille_max_pile
 
 
 def parcours_BFS(cartons, cible):
@@ -109,7 +109,7 @@ def parcours_BFS(cartons, cible):
             file.enfiler(enfant)
             taille_max_file = max(taille_max_file, file.longueur())
 
-    return meilleure_expression, nb_noeuds
+    return meilleure_expression, nb_noeuds, taille_max_pile
 
 
 def parcours_DFS_recursif(cartons, cible):
